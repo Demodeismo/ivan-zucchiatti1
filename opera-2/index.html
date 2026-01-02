@@ -21,7 +21,11 @@
 
   <body>
     <a-scene
-      mindar-image="imageTargetSrc: targets1.mind;"
+      mindar-image="
+        imageTargetSrc: targets1.mind;
+        filterMinCF: 0.001;
+        filterBeta: 15;
+      "
       vr-mode-ui="enabled: false"
       device-orientation-permission-ui="enabled: true"
       embedded
@@ -36,7 +40,7 @@
         <a-gltf-model
           src="#opera3d"
           position="0 0 0"
-          scale="1 1 1"
+          scale="2 2 2"
         ></a-gltf-model>
       </a-entity>
     </a-scene>
